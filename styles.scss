@@ -1,7 +1,7 @@
 /* Стили статей в учебных модулях */
 
 .ptd-article {
-  p, ul, li, blockquote {
+  p, ul, li, blockquote, div {
     font-size: 1.05rem;
   }
 
@@ -33,6 +33,7 @@
   h3 {
     font-size: 1.1em;
     font-weight: bold;
+    margin-bottom: 15px;
   }
 
   figure {
@@ -60,5 +61,12 @@
   blockquote {
     margin: 1rem 0 1rem;
     font-style: italic;
+  }
+}
+
+.coc {
+  li {
+    margin-bottom: 10px;
+    text-align: justify;
   }
 }
