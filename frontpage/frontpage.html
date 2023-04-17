@@ -2,62 +2,58 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <link rel="stylesheet" href="./main.css">
+    <link rel="stylesheet" href="./frontpage.css">
     <title>Title</title>
 </head>
 <body>
-    <header class="header">
-        <p class="header__welcome">Добро пожаловать в Учебно-Тренировочный центр подготовки пилотов русскоязычного
-            дивизиона
-            VATRUS!</p>
-        <a class="btn btn-primary" href="#how-to-start">Как начать обучение?</a>
+    <header class="header frontpage">
+        <p class="header__welcome">Добро пожаловать в Учебно-Тренировочный центр подготовки пилотов русскоязычного дивизиона VATRUS!</p>
+        <a class="btn-frontpage btn-frontpage-primary" href="#how-to-start">Как начать обучение?</a>
     </header>
-    <main>
-        <div class="wrapper about">
-            <h2 class="h2">Об учебном центре</h2>
+    <main class="frontpage">
+        <div class="wrapper-frontpage about">
+            <h2 class="h2-frontpage">Об учебном центре</h2>
             <div class="divider"></div>
             <p class="text text-about">Наш учебный центр занимается подготовкой и выпуском виртуальных пилотов с присвоением рейтингов обучения, варьирующихся от первоначальных навыков полетов в сети при получении рейтинга "P1", до рейтинга виртуального пилота, подтверждающего знания и умения к выполнению полетов по ППП (ATPL) на многодвигательных воздушных судах - "P4".</p>
-            <img class="about__image" src="./assets/logo_opaque.png" alt="">
+            <img class="about__image" src="../assets/logo_opaque.png" alt="">
         </div>
-        <div class="wrapper">
-            <h2 class="h2">Об учебных курсах</h2>
+        <div class="wrapper-frontpage">
+            <h2 class="h2-frontpage">Об учебных курсах</h2>
             <div class="divider"></div>
             <div class="courses-container">
-                <section class="course">
-                    <h3 class="h3">Р1 - Private pilot licence (PPL)</h3>
-                    <div class="course__grid">
-                        <p class="text">P1 - это основополагающий рейтинг, требующий от пилота базовых знаний по
-                            программе
-                            обучения PPL (пилота частной авиации), и включающий, углубленную теоретическую часть по принципам эксплуатации одномоторных легких воздушных судов. При изучении данного цикла курса, пилот получит базовые знания о принципах аэродинамики и динамике полета воздушного судна, основ навигации и системах навигационного обеспечения. Выполнит ряд практических занятий по управлению воздушным судном при различных условиях полета. Результатом присвоения данного рейтинга является  демонстрация студентом навыка управления выбранным типом ВС и его систем в нормальной полетной конфигурации без использования систем автоматического управления.</p>
-                        <img src="assets/p1_cover.jpg" alt="">
+                <section class="course-frontpage">
+                    <h3 class="h3-frontpage">Р1 - Private pilot licence (PPL)</h3>
+                    <div class="course-frontpage__grid">
+                        <p class="text">P1 - это основополагающий рейтинг, требующий от пилота базовых знаний по программе обучения PPL (пилота частной авиации), и включающий, углубленную теоретическую часть по принципам эксплуатации одномоторных легких воздушных судов. При изучении данного цикла курса, пилот получит базовые знания о принципах аэродинамики и динамике полета воздушного судна, основ навигации и системах навигационного обеспечения. Выполнит ряд практических занятий по управлению воздушным судном при различных условиях полета. Результатом присвоения данного рейтинга является демонстрация студентом навыка управления выбранным типом ВС и его систем в нормальной полетной конфигурации без использования систем автоматического управления.</p>
+                        <img src="../assets/p1_cover.jpg" alt="">
                     </div>
                 </section>
-                <section class="course">
-                    <h3 class="h3">Р2 - Instrument rating (IR)</h3>
-                    <div class="course__grid">
+                <section class="course-frontpage">
+                    <h3 class="h3-frontpage">Р2 - Instrument rating (IR)</h3>
+                    <div class="course-frontpage__grid">
                         <p class="text">P2 - Программа подготовки на рейтинг, требующий от пилота базовых знаний рейтингов Basic Vatsim Member и P1, и включающий углубленную теоретическую часть по принципам эксплуатации легких воздушных судов, при условиях выполнения полетов по правилам ППП. При изучении данного цикла курса, пилот получит основные знания о принципах правил полетов по приборам, использования навигационных систем, систем навигационного обеспечения. Выполнит ряд практических занятий по управлению воздушным судном при различных условиях полета. Результатом присвоения настоящего рейтинга является демонстрация студентом навыка управления выбранным типом ВС и его систем в нормальной полетной конфигурации, как в ручном, так и в автоматическом режиме полета.</p>
-                        <img src="assets/p2_cover.jpg" alt="">
+                        <img src="../assets/p2_cover.jpg" alt="">
                     </div>
                 </section>
-                <section class="course">
-                    <h3 class="h3">Р3 - Commercial multi-engine pilot licence (CMEL)</h3>
-                    <div class="course__grid">
+                <section class="course-frontpage">
+                    <h3 class="h3-frontpage">Р3 - Commercial multi-engine pilot licence (CMEL)</h3>
+                    <div class="course-frontpage__grid">
                         <p class="text">P3 - Программа подготовки пилотов на рейтинг включает базовые принципы предыдущих рейтингов с углубленным изучением теоретического материала и практической подготовки на допуск выполнения полетов в качестве пилота коммерческой авиации. Основное направление программы ориентировано на лекционные занятия и выполнение практических полетов по правилам ППП на многодвигательных летательных аппаратах под руководством пилотов-инструкторов. Получение рейтинга P3 осуществляется путем сдачи практического экзаменационного полета на выбранном типе ВС, согласно программе подготовки летного состава.</p>
-                        <img src="assets/p3_cover.jpg" alt="">
+                        <img src="../assets/p3_cover.jpg" alt="">
                     </div>
                 </section>
-                <section class="course">
-                    <h3 class="h3">Р4 - Airline transport pilot licence</h3>
-                    <div class="course__grid">
+                <section class="course-frontpage">
+                    <h3 class="h3-frontpage">Р4 - Airline transport pilot licence</h3>
+                    <div class="course-frontpage__grid">
                         <p class="text">P4 - Программа завершающего этапа подготовки пилотов. Программа подготовки
                             пилотов на рейтинг P4 включает базовые принципы предыдущих рейтингов с углубленным изучением теоретического материала и практической подготовки на допуск выполнения полетов в качестве пилота линейной авиации. Основное направление программы ориентировано на лекционные занятия и выполнение практических полетов по правилам ППП на многодвигательных сухопутных воздушных судах под руководством пилотов-инструкторов. Получение рейтинга P4 осуществляется путем сдачи практического экзаменационного полета на выбранном типе ВС, согласно программе подготовки летного состава.</p>
-                        <img src="assets/p4_cover.jpg" alt="">
+                        <img src="../assets/p4_cover.jpg" alt="">
                     </div>
                 </section>
             </div>
         </div>
-        <div class="wrapper">
-            <h2 class="h2" id="how-to-start">Что нужно для начала обучения</h2>
+        <div class="wrapper-frontpage">
+            <h2 class="h2-frontpage" id="how-to-start">Что нужно для начала обучения</h2>
             <div class="divider"></div>
             <ul class="requirements-list">
                 <li class="requirements-list__item">
@@ -78,18 +74,18 @@
                 <a href="#">дискорда VATRUS</a> о том, что Вы готовы пройти первоначальное собеседование.</p>
         </div>
         <section class="discord-banner">
-            <div class="wrapper">
+            <div class="wrapper-frontpage">
                 <div class="discord-banner-inner">
                     <p>Присоединяйтесь к нашему серверу в Discord</p>
                     <a href="#">Discord (#training-pilots)</a>
                 </div>
             </div>
         </section>
-        <div class="wrapper">
-            <h2 class="h2">Наша статистика</h2>
+        <div class="wrapper-frontpage">
+            <h2 class="h2-frontpage">Наша статистика</h2>
             <div class="divider"></div>
         </div>
-        <div class="wrapper stat__wrapper">
+        <div class="wrapper-frontpage stat__wrapper">
             <div class="stat__container">
                 <article class="stat__item">
                     <svg class="stat__icon" width="101" height="50" viewBox="0 0 101 50" fill="none"
@@ -225,8 +221,8 @@
                 </article>
             </div>
         </div>
-        <div class="wrapper">
-            <h2 class="h2">Документы</h2>
+        <div class="wrapper-frontpage">
+            <h2 class="h2-frontpage">Документы</h2>
             <div class="divider"></div>
             <div class="docs__container">
                 <div class="docs__section">
@@ -238,8 +234,7 @@
                 </div>
 
                 <div class="docs__section">
-                    <h3 class="docs__heading">
-                        Руководящие документы                </h3>
+                    <h3 class="docs__heading">Руководящие документы</h3>
                     <p><a class="docs__item" href="#">Политика обработки персональных данных</a></p>
                     <p><a class="docs__item" href="#">Политика в отношении защиты и обработки данных данных</a></p>
                     <p><a class="docs__item" href="#">Политика обработки персональных данных</a></p>
@@ -247,26 +242,27 @@
                 </div>
 
                 <div class="docs__section">
-                    <h3 class="docs__heading">
-                        Документы для курсов                </h3>
+                    <h3 class="docs__heading">Документы для курсов</h3>
                     <p><a class="docs__item" href="#">Политика обработки персональных данных</a></p>
                     <p><a class="docs__item" href="#">Политика в отношении защиты и обработки данных данных</a></p>
                 </div>
             </div>
         </div>
-        <div class="wrapper cta">
+        <div class="wrapper-frontpage cta">
             <p>Рейтинг ближе, чем кажется!</p>
-            <button class="btn btn-primary">Заполнить заявку</button>
+            <a class="btn-frontpage btn-frontpage-primary" href="#">Заполнить заявку</a>
         </div>
     </main>
-    <footer class="footer">
-        <div class="wrapper footer__container">
-            <div class="footer__icon-container">
-                <a href="#" class="footer__icon"><img src="assets/discord-icon-footer.svg" alt="Discord link"></a>
-                <a href="#" class="footer__icon"><img src="assets/vk-icon.svg" alt="VK link"></a>
+    <footer class="footer-frontpage frontpage">
+        <div class="wrapper-frontpage footer-frontpage__container">
+            <div class="footer-frontpage__icon-container">
+                <a href="#" class="footer-frontpage__icon"><img src="../assets/discord-icon-footer.svg"
+                                                                alt="Discord link"></a>
+                <a href="#" class="footer-frontpage__icon"><img src="../assets/vk-icon.svg" alt="VK link"></a>
             </div>
-            <a href="#" class="footer__icon footer__icon_central">                <img src="assets/vatrus-logo.png"
-                                                                   alt="Vatrus division link"></a>
+            <a href="#" class="footer__icon footer-frontpage__icon_central">
+                <img src="../assets/vatrus-logo.png" alt="Vatrus division link">
+            </a>
             <p>Copyright ©2023 PTD Vatrus.<br>All rights reserved.</p>
         </div>
     </footer>
