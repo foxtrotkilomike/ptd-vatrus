@@ -67,8 +67,13 @@
     margin: 1rem 0 1rem;
     font-style: italic;
   }
-  
+
   .alert-light {
     background-color: #fafafa;
+  }
+
+  th, td {
+    border: 1px solid #bbb !important;
+    text-align: center !important;
   }
 }
