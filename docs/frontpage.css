@@ -468,7 +468,7 @@ html {
   align-items: center;
   gap: 70px;
   color: #ffffff;
-  background-image: url("./ptd-vatrus/assets/main-background-wide.jpg");
+  background-image: url("assets/main-background-wide.jpg");
   background-size: cover;
   background-position: center;
 }
@@ -682,7 +682,7 @@ html {
   left: -190px;
   width: 302px;
   height: 231px;
-  background-image: url("./ptd-vatrus/assets/discord-icon.svg");
+  background-image: url("assets/discord-icon.svg");
   z-index: 1;
 }
 .discord-banner-inner p {
