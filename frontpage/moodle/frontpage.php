@@ -17,7 +17,7 @@
 /**
  * A drawer based layout for the boost theme.
  *
- * @package   theme_myboost
+ * @package   theme_boost
  * @copyright 2021 Bas Brands
  * @license   http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
@@ -115,4 +115,4 @@ $templatecontext = [
     'imgvatruslogofooter' => $OUTPUT->image_url('assets/vatrus-logo', 'theme'),
 ];
 
-echo $OUTPUT->render_from_template('theme_myboost/frontpage', $templatecontext);
+echo $OUTPUT->render_from_template('theme_boost/frontpage', $templatecontext);
