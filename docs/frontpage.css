@@ -468,7 +468,7 @@ html {
   align-items: center;
   gap: 70px;
   color: #ffffff;
-  background-image: url("assets/main-background-wide.jpg");
+  background-image: url("../assets/main-background-wide.jpg");
   background-size: cover;
   background-position: center;
 }
@@ -500,6 +500,40 @@ html {
   .header-frontpage {
     padding: 70px 30px 45px;
     gap: 45px;
+  }
+}
+
+.image-float-left {
+  float: left;
+  max-width: 45%;
+  padding-right: 35px;
+  padding-bottom: 10px;
+  position: relative;
+  top: 10px;
+}
+@media screen and (max-width: 800px) {
+  .image-float-left {
+    float: none;
+    padding: 0 5% 10% 5%;
+    width: 100%;
+    max-width: 100%;
+  }
+}
+
+.image-float-right {
+  float: right;
+  max-width: 45%;
+  padding-left: 35px;
+  padding-bottom: 10px;
+  position: relative;
+  top: 10px;
+}
+@media screen and (max-width: 800px) {
+  .image-float-right {
+    float: none;
+    padding: 0 5% 10% 5%;
+    width: 100%;
+    max-width: 100%;
   }
 }
 
@@ -538,6 +572,12 @@ html {
   font-weight: 600;
   line-height: 100%;
   position: relative;
+  clear: both;
+}
+@media screen and (min-width: 1050px) {
+  .h2-frontpage-after-about {
+    padding-top: 85px;
+  }
 }
 @media screen and (max-width: 768px) {
   .h2-frontpage {
@@ -682,7 +722,7 @@ html {
   left: -190px;
   width: 302px;
   height: 231px;
-  background-image: url("assets/discord-icon.svg");
+  background-image: url("../assets/discord-icon.svg");
   z-index: 1;
 }
 .discord-banner-inner p {
