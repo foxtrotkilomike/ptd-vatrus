@@ -1,7 +1,11 @@
 /* Стили статей в учебных модулях */
 
 .ptd-article {
-  p, ul, li, blockquote, div {
+  p,
+  ul,
+  li,
+  blockquote,
+  div {
     font-size: 1.05rem;
   }
 
@@ -10,7 +14,8 @@
     text-align: justify;
   }
 
-  ul, ol {
+  ul,
+  ol {
     padding-left: 30px;
   }
 
@@ -73,8 +78,27 @@
     background-color: #fafafa;
   }
 
-  th, td {
+  th,
+  td {
     border: 1px solid #bbb !important;
     text-align: center !important;
   }
+}
+
+/** Таблица с материалами по летной подготовке (находится в Р1) */
+.table-with-links {
+  th,
+  td {
+    vertical-align: middle !important;
+  }
+}
+
+/** Цвет строк таблицы с обязательными материалами (нечетные строки) */
+.table-striped tbody tr:nth-of-type(odd).tr-mandatory {
+  background-color: #def1de;
+}
+
+/** Цвет строк таблицы с обязательными материалами (нечетные строки) */
+.table-striped tbody tr:nth-of-type(even).tr-mandatory {
+  background-color: #f3faf3;
 }
