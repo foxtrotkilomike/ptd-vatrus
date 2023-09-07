@@ -83,6 +83,82 @@
     border: 1px solid #bbb !important;
     text-align: center !important;
   }
+
+  /* ----------  P1 Что необходимо установить для выполнения полетов? ----------*/
+  .table-with-links {
+    th,
+    td {
+      vertical-align: middle !important;
+    }
+
+    .btn-outline-secondary.disabled {
+      color: #6a737b;
+      border-color: #6a737b;
+    }
+
+    /** Цвет строк таблицы с обязательными материалами (нечетные строки) */
+    .table-striped tbody tr.tr-mandatory {
+      background-color: #b7e1b7;
+    }
+  }
+  /* ----------  P1 Что необходимо установить для выполнения полетов? ----------*/
+
+  /* ----------  P1 Полетные карты и сборники для выполнения полетов по ПВП ----------*/
+  .link-card-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+    justify-content: flex-start;
+    padding: 40px 0;
+  }
+
+  .link-card-link.link-card-link {
+    text-decoration: none;
+  }
+
+  /* карточка со ссылкой на ресурс и превьюшкой */
+  .link-card {
+    min-width: 250px;
+    max-width: 330px;
+    height: 100%;
+    border-radius: 10px;
+    cursor: pointer;
+    border: 1px solid #dddddd;
+    box-shadow: 0 0.125rem 0.25rem rgba(0, 0, 0, 0.075) !important;
+    transition: all 0.2s ease;
+  }
+
+  .link-card:hover {
+    transform: scale(102%);
+  }
+
+  .link-card__image {
+    height: 300px;
+    width: 100%;
+    object-fit: cover;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+  }
+
+  .link-card__description-container {
+    padding: 20px 10px 10px;
+  }
+
+  .link-card__title {
+    margin: 0 0 20px;
+    font-size: 20px !important;
+    color: #116cff;
+    text-decoration: underline;
+    text-align: center;
+  }
+
+  .link-card__description {
+    margin: 0 0 10px;
+    font-size: 0.625em;
+    color: black;
+    text-decoration: none;
+  }
+  /* ----------  P1 Полетные карты и сборники для выполнения полетов по ПВП ----------*/
 }
 
 /** Таблица с материалами по летной подготовке (находится в Р1) */
