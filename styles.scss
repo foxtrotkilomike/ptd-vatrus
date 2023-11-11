@@ -41,9 +41,9 @@
   }
 
   h3 {
-    font-size: 1.1em;
+    font-size: 1.3em;
     font-weight: bold;
-    margin-top: 30px;
+    margin-top: 35px;
     margin-bottom: 15px;
   }
 
@@ -61,6 +61,7 @@
       font-size: 1.3em;
       font-style: italic;
       text-align: center;
+      margin-top: 10px;
     }
   }
 
@@ -82,6 +83,13 @@
   td {
     border: 1px solid #bbb !important;
     text-align: center !important;
+  }
+
+  /*---------- iframe с видео с rutube -------------*/
+  iframe[src*="rutube.ru"] {
+    width: 95%;
+    height: auto;
+    aspect-ratio: 1.77;
   }
 
   /* ----------  P1 Что необходимо установить для выполнения полетов? ----------*/
