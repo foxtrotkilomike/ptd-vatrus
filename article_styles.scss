@@ -202,3 +202,19 @@
 .table-striped tbody tr:nth-of-type(even).tr-mandatory {
   background-color: #f3faf3;
 }
+
+/** Список вопросов для самопроверки */
+.end-article-questions {
+  padding: 20px;
+  margin-bottom: 1rem;
+  border-radius: 0.5rem;
+  background-color: #0d6efd1f;
+}
+
+.end-article-questions li {
+  margin-bottom: 20px;
+}
+
+.end-article-questions li::marker {
+  margin-right: 5px;
+}

@@ -670,3 +670,25 @@ iframe[src*="rutube.ru"] {
   text-decoration: none;
 }
 /* ----------  P1 Полетные карты и сборники для выполнения полетов по ПВП ----------*/
+
+/** Список вопросов для самопроверки */
+.end-article-questions {
+  padding: 20px;
+  margin-bottom: 1rem;
+  border-radius: 0.5rem;
+  background-color: #0d6efd1f;
+}
+
+.end-article-questions li {
+  margin-bottom: 20px;
+}
+
+.end-article-questions li::marker {
+  font-weight: 500;
+}
+
+.end-article-questions li::before {
+  display: inline-block;
+  content: "";
+  width: 5px;
+}
