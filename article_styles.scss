@@ -64,7 +64,7 @@
     }
 
     figcaption {
-      font-size: 1.3em;
+      font-size: 1.1em;
       font-style: italic;
       text-align: center;
       margin-top: 10px;
@@ -226,4 +226,9 @@
 .end-article-questions__internal-list li {
   margin-top: 10px;
   margin-bottom: 10px;
+}
+
+/** Сброс точек у элементов списка */
+ul.none-style {
+  list-style-type: none;
 }
