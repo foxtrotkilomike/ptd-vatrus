@@ -444,7 +444,7 @@ body {
     align-items: center;
     gap: 20px;
 
-    > * {
+    >* {
       flex-basis: 260px;
     }
 
@@ -597,6 +597,7 @@ iframe[src*="rutube.ru"] {
 
 /* ----------  P1 Что необходимо установить для выполнения полетов? ----------*/
 .table-with-links {
+
   th,
   td {
     vertical-align: middle !important;
@@ -612,6 +613,7 @@ iframe[src*="rutube.ru"] {
     background-color: #b7e1b7;
   }
 }
+
 /* ----------  P1 Что необходимо установить для выполнения полетов? ----------*/
 
 /* ----------  P1 Полетные карты и сборники для выполнения полетов по ПВП ----------*/
@@ -669,6 +671,7 @@ iframe[src*="rutube.ru"] {
   color: black;
   text-decoration: none;
 }
+
 /* ----------  P1 Полетные карты и сборники для выполнения полетов по ПВП ----------*/
 
 /** Список вопросов для самопроверки */
@@ -691,4 +694,9 @@ iframe[src*="rutube.ru"] {
   display: inline-block;
   content: "";
   width: 5px;
+}
+
+.end-article-questions__internal-list li {
+  margin-top: 10px;
+  margin-bottom: 10px;
 }

@@ -100,6 +100,7 @@
 
   /* ----------  P1 Что необходимо установить для выполнения полетов? ----------*/
   .table-with-links {
+
     th,
     td {
       vertical-align: middle !important;
@@ -115,6 +116,7 @@
       background-color: #b7e1b7;
     }
   }
+
   /* ----------  P1 Что необходимо установить для выполнения полетов? ----------*/
 
   /* ----------  P1 Полетные карты и сборники для выполнения полетов по ПВП ----------*/
@@ -172,6 +174,7 @@
     color: black;
     text-decoration: none;
   }
+
   /* ----------  P1 Полетные карты и сборники для выполнения полетов по ПВП ----------*/
 }
 
@@ -187,6 +190,7 @@
 
 /** Таблица с материалами по летной подготовке (находится в Р1) */
 .table-with-links {
+
   th,
   td {
     vertical-align: middle !important;
@@ -217,4 +221,9 @@
 
 .end-article-questions li::marker {
   margin-right: 5px;
+}
+
+.end-article-questions__internal-list li {
+  margin-top: 10px;
+  margin-bottom: 10px;
 }
