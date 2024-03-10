@@ -228,7 +228,12 @@
   margin-bottom: 10px;
 }
 
+/** ------------------ Стили списков -------------------- */
 /** Сброс точек у элементов списка */
 ul.none-style {
   list-style-type: none;
+}
+
+ul.dash-style {
+  list-style-type: '— ';
 }
