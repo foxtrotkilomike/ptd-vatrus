@@ -414,6 +414,10 @@ html {
   padding: 0;
 }
 
+body {
+  scroll-behavior: smooth;
+}
+
 .frontpage {
   font-size: 1.25rem;
   font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Helvetica Neue, Arial, Noto Sans,
@@ -423,45 +427,14 @@ html {
   margin: 0;
   scroll-behavior: smooth;
 }
+
 .frontpage p {
-  margin-bottom: 25px;
+  margin-block-end: 1em;
 }
-@media screen and (max-width: 476px) {
-  .frontpage p {
-    line-height: 135%;
-  }
-}
+
 .frontpage a {
   color: #2147a7;
   text-decoration: underline;
-}
-.frontpage blockquote {
-  padding-left: 1rem;
-  margin: 1rem 0 1rem;
-  font-style: italic;
-  color: #747474;
-  border-left: 5px solid #ced4da;
-  line-height: 140%;
-  text-align: justify;
-}
-.frontpage figure {
-  margin: 2rem 0 2rem;
-}
-.frontpage figure img {
-  display: block;
-  margin: 0 auto;
-  max-width: 70%;
-  height: auto;
-}
-@media screen and (max-width: 640px) {
-  .frontpage figure img {
-    max-width: 100%;
-  }
-}
-.frontpage figure figcaption {
-  font-size: 1.3em;
-  font-style: italic;
-  text-align: center;
 }
 
 .header-frontpage {
@@ -472,7 +445,7 @@ html {
   align-items: center;
   gap: 70px;
   color: #ffffff;
-  background-image: url("../assets/main-background-wide.jpg");
+  background-image: url([[pix:theme|assets/main-background-wide]]);
   background-size: cover;
   background-position: center;
 }
@@ -504,40 +477,6 @@ html {
   .header-frontpage {
     padding: 70px 30px 45px;
     gap: 45px;
-  }
-}
-
-.image-float-left {
-  float: left;
-  max-width: 45%;
-  padding-right: 35px;
-  padding-bottom: 10px;
-  position: relative;
-  top: 10px;
-}
-@media screen and (max-width: 800px) {
-  .image-float-left {
-    float: none;
-    padding: 0 5% 10% 5%;
-    width: 100%;
-    max-width: 100%;
-  }
-}
-
-.image-float-right {
-  float: right;
-  max-width: 45%;
-  padding-left: 35px;
-  padding-bottom: 10px;
-  position: relative;
-  top: 10px;
-}
-@media screen and (max-width: 800px) {
-  .image-float-right {
-    float: none;
-    padding: 0 5% 10% 5%;
-    width: 100%;
-    max-width: 100%;
   }
 }
 
@@ -576,12 +515,6 @@ html {
   font-weight: 600;
   line-height: 100%;
   position: relative;
-  clear: both;
-}
-@media screen and (min-width: 1050px) {
-  .h2-frontpage-after-about {
-    padding-top: 85px;
-  }
 }
 @media screen and (max-width: 768px) {
   .h2-frontpage {
@@ -604,7 +537,7 @@ html {
   }
 }
 
-.divider {
+.divider-frontpage {
   margin-bottom: 45px;
   width: 75px;
   height: 4px;
@@ -614,18 +547,18 @@ html {
   background-color: #000000;
 }
 @media screen and (max-width: 768px) {
-  .divider {
+  .divider-frontpage {
     margin-bottom: 35px;
   }
 }
 
-.text {
+.text-frontpage {
   font-size: 1.25rem;
   line-height: 175%;
   text-align: justify;
 }
 
-.courses-container {
+.courses-container-frontpage {
   display: flex;
   flex-direction: column;
   gap: 65px;
@@ -665,7 +598,7 @@ html {
 .about__image {
   position: absolute;
   right: 5%;
-  top: 60px;
+  top: 25%;
   z-index: 1;
 }
 
@@ -731,7 +664,7 @@ html {
   left: -190px;
   width: 302px;
   height: 231px;
-  background-image: url("../assets/discord-icon.svg");
+  background-image: url([[pix:theme|assets/discord-icon]]);
   z-index: 1;
 }
 .discord-banner-inner p {
@@ -916,4 +849,4 @@ html {
   }
 }
 
-/*# sourceMappingURL=frontpage.css.map */
+/*# sourceMappingURL=frontpage-new.css.map */

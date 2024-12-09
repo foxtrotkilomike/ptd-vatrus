@@ -1,46 +1,3 @@
-@import "normalize";
-*,
-*::before,
-*::after {
-  padding: 0;
-  margin: 0;
-  border: 0;
-  box-sizing: border-box;
-}
-a {
-  text-decoration: none;
-}
-ul,
-ol,
-li {
-  list-style: none;
-}
-img {
-  vertical-align: top;
-}
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-  font-weight: inherit;
-  font-size: inherit;
-}
-body,
-html {
-  height: 100%;
-  line-height: 1;
-  font-size: 16px;
-  color: #000;
-}
-.container {
-  min-height: 100%;
-  overflow: hidden;
-}
-
-
-
 $color-white: #ffffff;
 $color-black: #000000;
 $color-red: #E80000;
@@ -53,60 +10,34 @@ $color-text-stat-number: #05a905;
 $color-footer-bg: #F4F6F9;
 $color-footer-border: #BABABA;
 
+.container {
+  min-height: 100%;
+  overflow: hidden;
+}
+
 #page.drawers {
   padding: 0;
 }
 
+body {
+  scroll-behavior: smooth;
+}
+
 .frontpage {
   font-size: 1.25rem;
-  font-family: -apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Helvetica Neue,Arial,Noto Sans,Liberation Sans,sans-serif,Apple Color Emoji,Segoe UI Emoji,Segoe UI Symbol,Noto Color Emoji;
+  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Helvetica Neue, Arial, Noto Sans, Liberation Sans, sans-serif, Apple Color Emoji, Segoe UI Emoji, Segoe UI Symbol, Noto Color Emoji;
   padding: 0;
   margin: 0;
   scroll-behavior: smooth;
+}
 
-  p {
-    margin-bottom: 25px;
+.frontpage p {
+  margin: 0;
+}
 
-    @media screen and (max-width: 476px){
-      line-height: 135%;
-    }
-  }
-
-  a {
-    color: $color-blue;
-    text-decoration: underline;
-  }
-
-  blockquote {
-    padding-left: 1rem;
-    margin: 1rem 0 1rem;
-    font-style: italic;
-    color: $color-text-secondary;
-    border-left: 5px solid #ced4da;
-    line-height: 140%;
-    text-align: justify;
-  }
-
-  figure {
-    margin: 2rem 0 2rem;
-
-    img {
-      display: block;
-      margin: 0 auto;
-      max-width: 70%;
-      height: auto;
-
-      @media screen and (max-width: 640px){
-        max-width: 100%;
-      }
-    }
-
-    figcaption {
-      font-size: 1.3em;
-      font-style: italic;
-      text-align: center;
-    }
-  }
+.frontpage a {
+  color: $color-blue;
+  text-decoration: underline;
 }
 
 .header-frontpage {
@@ -117,7 +48,7 @@ $color-footer-border: #BABABA;
   align-items: center;
   gap: 70px;
   color: $color-white;
-  background-image: url("../assets/main-background-wide.jpg");
+  background-image: url([[pix:theme|assets/main-background-wide]]);
   background-size: cover;
   background-position: center;
 
@@ -146,38 +77,6 @@ $color-footer-border: #BABABA;
   @media screen and (max-width: 580px) {
     padding: 70px 30px 45px;
     gap: 45px;
-  }
-}
-
-.image-float-left {
-  float: left;
-  max-width: 45%;
-  padding-right: 35px;
-  padding-bottom: 10px;
-  position: relative;
-  top: 10px;
-
-  @media screen and (max-width: 800px) {
-    float: none;
-    padding: 0 5% 10% 5%;
-    width: 100%;
-    max-width: 100%;
-  }
-}
-
-.image-float-right {
-  float: right;
-  max-width: 45%;
-  padding-left: 35px;
-  padding-bottom: 10px;
-  position: relative;
-  top: 10px;
-
-  @media screen and (max-width: 800px) {
-    float: none;
-    padding: 0 5% 10% 5%;
-    width: 100%;
-    max-width: 100%;
   }
 }
 
@@ -217,13 +116,6 @@ $color-footer-border: #BABABA;
   font-weight: 600;
   line-height: 100%;
   position: relative;
-  clear: both;
-
-  &-after-about {
-    @media screen and (min-width: 1050px) {
-      padding-top: 85px;
-    }
-  }
 
   @media screen and (max-width: 768px) {
     margin-bottom: 20px;
@@ -244,7 +136,7 @@ $color-footer-border: #BABABA;
   }
 }
 
-.divider {
+.divider-frontpage {
   margin-bottom: 45px;
   width: 75px;
   height: 4px;
@@ -258,13 +150,14 @@ $color-footer-border: #BABABA;
   }
 }
 
-.text {
+.text-frontpage {
   font-size: 1.25rem;
   line-height: 175%;
   text-align: justify;
+  margin-bottom: 1rem;
 }
 
-.courses-container {
+.courses-container-frontpage {
   display: flex;
   flex-direction: column;
   gap: 65px;
@@ -306,7 +199,7 @@ $color-footer-border: #BABABA;
   &__image {
     position: absolute;
     right: 5%;
-    top: 60px;
+    top: 25%;
     z-index: 1;
   }
 }
@@ -320,8 +213,11 @@ $color-footer-border: #BABABA;
   padding-top: 30px;
 }
 
-.requirements-list {
+.text-bold {
+  font-weight: 600;
+}
 
+.requirements-list {
   &__item {
     display: flex;
     gap: 25px;
@@ -341,21 +237,22 @@ $color-footer-border: #BABABA;
       color: $color-white;
       font-size: 2rem;
       font-weight: 600;
+      flex-shrink: 0;
     }
   }
 }
 
 .discord-banner {
-  .wrapper-frontpage {
-    margin-top: 0;
-  }
-
   margin-top: 85px;
   background-color: $color-discord;
   color: $color-white;
   font-weight: 600;
   position: relative;
   overflow: hidden;
+
+  .wrapper-frontpage {
+    margin-top: 0;
+  }
 
   &-inner {
     position: relative;
@@ -373,7 +270,7 @@ $color-footer-border: #BABABA;
       left: -190px;
       width: 302px;
       height: 231px;
-      background-image: url("../assets/discord-icon.svg");
+      background-image: url([[pix:theme|assets/discord-icon]]);
       z-index: 1;
     }
 

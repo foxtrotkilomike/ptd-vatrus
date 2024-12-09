@@ -20,14 +20,14 @@ body {
 
 .frontpage {
   font-size: 1.25rem;
-  font-family: -apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Helvetica Neue,Arial,Noto Sans,Liberation Sans,sans-serif,Apple Color Emoji,Segoe UI Emoji,Segoe UI Symbol,Noto Color Emoji;
+  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Helvetica Neue, Arial, Noto Sans, Liberation Sans, sans-serif, Apple Color Emoji, Segoe UI Emoji, Segoe UI Symbol, Noto Color Emoji;
   padding: 0;
   margin: 0;
   scroll-behavior: smooth;
 }
 
 .frontpage p {
-  margin: 0;
+  margin-block-end: 1em;
 }
 
 .frontpage a {
@@ -207,6 +207,10 @@ body {
   padding-top: 30px;
 }
 
+.text-bold {
+  font-weight: 600;
+}
+
 .requirements-list {
   &__item {
     display: flex;
@@ -227,6 +231,7 @@ body {
       color: $color-white;
       font-size: 2rem;
       font-weight: 600;
+      flex-shrink: 0;
     }
   }
 }
