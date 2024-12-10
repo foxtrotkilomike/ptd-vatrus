@@ -445,7 +445,7 @@ body {
   align-items: center;
   gap: 70px;
   color: #ffffff;
-  background-image: url([[pix:theme|assets/main-background-wide]]);
+  background-image: url("./assets/main-background-wide.jpg");
   background-size: cover;
   background-position: center;
 }
