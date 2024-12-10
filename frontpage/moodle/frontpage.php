@@ -115,6 +115,9 @@ $templatecontext = [
     'imgdiscordiconfooter' => $OUTPUT->image_url('assets/discord-icon-footer', 'theme'),
     'imgvkiconfooter' => $OUTPUT->image_url('assets/vk-icon', 'theme'),
     'imgvatruslogofooter' => $OUTPUT->image_url('assets/vatrus-logo', 'theme'),
+    'imgldosaafbanner' => $OUTPUT->image_url('assets/mchs_dosaaf_banner', 'theme'),
+    'imglvatsimlogo' => $OUTPUT->image_url('assets/vatsim_logo', 'theme'),
+    'imglvatsimspecopslogo' => $OUTPUT->image_url('assets/vatsim_logo_spec_ops', 'theme'),
 ];
 
 echo $OUTPUT->render_from_template('theme_boost/frontpage', $templatecontext);

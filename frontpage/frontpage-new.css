@@ -437,6 +437,10 @@ body {
   text-decoration: underline;
 }
 
+.frontpage img {
+  border-radius: 6px;
+}
+
 .header-frontpage {
   padding: 165px 50px 130px;
   display: flex;
@@ -579,7 +583,7 @@ body {
   }
 }
 .course-frontpage__grid img {
-  padding-top: 16px;
+  margin-top: 16px;
   max-width: 440px;
   height: auto;
 }
@@ -810,26 +814,46 @@ body {
   background-color: #f4f6f9;
   border-top: 1px solid #bababa;
 }
-.footer-frontpage__container {
+
+.footer-frontpage__container_first {
   margin-top: 0;
-  padding: 40px 20px;
+  padding: 40px 20px 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+@media screen and (max-width: 750px) {
+  .footer-frontpage__container_first {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+.footer-frontpage__container_first img {
+  width: 200px;
+}
+
+.footer-frontpage__container_second {
+  margin-top: 0;
+  padding: 20px 20px 40px;
   display: flex;
   justify-content: space-between;
   align-items: center;
   gap: 20px;
 }
-.footer-frontpage__container > * {
+.footer-frontpage__container_second > * {
   flex-basis: 260px;
 }
 @media screen and (max-width: 580px) {
-  .footer-frontpage__container {
+  .footer-frontpage__container_second {
     flex-wrap: wrap;
     justify-content: center;
   }
 }
-.footer-frontpage__icon_central {
-  text-align: center;
-}
+
 .footer-frontpage__icon-container {
   display: flex;
   justify-content: flex-start;
@@ -847,6 +871,14 @@ body {
   .footer-frontpage p {
     text-align: center;
   }
+}
+
+.mchs-dosaaf-section img {
+  width: 100%;
+  max-width: 100%;
+  height: 300px;
+  object-fit: cover;
+  margin-bottom: 16px;
 }
 
 /*# sourceMappingURL=frontpage-new.css.map */
