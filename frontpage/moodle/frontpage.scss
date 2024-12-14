@@ -424,6 +424,57 @@ body {
   }
 }
 
+/*
+
+текущий вариант на сайте
+
+.footer-frontpage {
+  background-color: $color-footer-bg;
+  border-top: 1px solid $color-footer-border;
+
+  &__container {
+    margin-top: 0;
+    padding: 40px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+
+    > * {
+      flex-basis: 260px;
+    }
+
+    @media screen and (max-width: 580px) {
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+  }
+
+  &__icon_central {
+    text-align: center;
+  }
+
+  &__icon-container {
+    display: flex;
+    justify-content: flex-start;
+    gap: 45px;
+
+    @media screen and (max-width: 580px) {
+      justify-content: center;
+    }
+  }
+
+  p {
+    text-align: right;
+
+    @media screen and (max-width: 580px) {
+      text-align: center;
+    }
+  }
+}
+
+*/
+
 .footer-frontpage {
   background-color: $color-footer-bg;
   border-top: 1px solid $color-footer-border;

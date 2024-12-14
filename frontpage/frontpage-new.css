@@ -873,7 +873,8 @@ body {
   }
 }
 
-.mchs-dosaaf-section img {
+/* mchs dosaaf секция */
+.wrapper-frontpage:nth-child(2) img {
   width: 100%;
   max-width: 100%;
   height: 300px;

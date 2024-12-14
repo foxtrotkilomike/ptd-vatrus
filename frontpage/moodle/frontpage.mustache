@@ -84,10 +84,13 @@ require(['theme_boost/loader', 'theme_boost/drawer'], function(Loader, Drawer) {
 {{/js}}
 
 {{#js}}
+console.log('frontpage js 2 test');
 document.addEventListener('DOMContentLoaded', function() {
     var yearElement = document.getElementById('frontpage-year');
+    console.log('yearElement', yearElement);
     if (yearElement) {
         var currentYear = new Date().getFullYear();
+        console.log('currentYear', currentYear);
         yearElement.textContent = currentYear;
     }
 });
